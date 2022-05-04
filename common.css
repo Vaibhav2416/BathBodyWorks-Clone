@@ -1,0 +1,120 @@
+.promo-banner-click-layer{
+    height: 55px;
+   background-image:url("https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/en_US/v1651571161245/css/images/gingham-pattern.svg?yocs=o_s_");
+   /* background-position: calc(50% - 7px) calc(50% - 21px); */
+   /* background-size: 28px 28px; */
+   margin-top: 0; 
+   top: 0;
+   border-bottom: 1px solid #e5e5e5;
+   
+   }
+
+   #innerpart{
+       background-color: white;
+       height:100%;
+       width: 70%;
+       margin: auto;
+       display: flex;
+       align-items: center;
+       gap: 20px;
+        justify-content: space-around;
+        border-top: 2px solid  #005699;
+        border-bottom: 2px solid  #005699;
+       /* justify-content: space-ar; */
+      
+   }
+   #innerpart > p {
+   color: #005699;
+   font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+   font-size: 25px;
+   font-weight: bold;
+   margin-top: 10px; 
+   /* padding-left: 10px; */
+   /* display: flex;
+   justify-content: space-between; */
+   }
+   #innerpart > p:nth-child(2)
+   {
+       font-family: 'Roboto Slab', serif;
+       font-weight: bold;
+       font-size: 30px;
+       margin-left: -2.5%;
+       padding-top: 6px;
+   }
+   
+   .details{
+       display: flex;
+       margin-right: 2%;
+       justify-content: flex-end;
+       align-items: flex-end;
+       font-size: 18px;
+       color: #005699;
+       text-decoration: underline;
+      
+   }
+   #innerpart:hover{
+       background-color: seashell;
+       cursor: pointer;
+       
+   }
+
+   /* .promo-banner-click-layer {
+   display: block;
+   /* width: 100%;
+   height: 100%; */
+   /* position: absolute;
+   top: 0;
+   z-index: 1;
+} */ 
+a {
+   text-decoration: none;
+   color: #005699;
+}
+.belowHead{
+   width: 100%;
+   background-color: #f2f2f2;
+   height: 60px;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   gap: 20px;
+}
+.belowHead>p{
+   margin-right: 60px;
+   font-size: 20px;
+   text-decoration: underline;
+   font-weight: lighter;
+}
+.belowHead>h3{
+   color: #005699;
+   font-size: 23px;
+   font-family: "TrendSansW05-One",Arial,sans-serif;
+   font-weight: lighter;
+
+}
+.belowHead>img{
+   height: 60%;
+}
+#bodyworks{
+    width: 100%;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 4%;
+    display: flex;
+    padding-left: 130px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#bodyworks>img{
+    height: 60px;
+    width: 30%;
+    margin: auto;
+ 
+   
+}
+#searchbox{
+    width: 25%;
+    height: 30px;
+    
+}
