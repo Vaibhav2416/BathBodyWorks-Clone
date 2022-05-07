@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu_tab</title>
+
+    <style>
+
+*{
+    text-transform: capitalize;
+}
+        /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.tab>h1{
+  text-align: center;
+  color: blue;
+}
+#B{
+  
+  display: flex;
+  text-align: center;
+  margin-left: 10%;
+  margin-top:5%;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+#B>p{
+    margin-right: 10%;
+}
+#C{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows:repeat(1,400px);
+  background-color: blue;
+  gap: 15px;
+  margin-bottom: 4%;
+}
+#C>div{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#D{
+  text-align: center;
+}
+#D>input{
+  font-size: 100%;
+}
+#E{
+  text-align: center;
+}
+#F{
+  text-align: center;
+}
+#G{
+  text-align: center;
+
+}
+#G>input{
+  font-size: 150%;
+  background-color: rgb(89, 89, 129);
+  color:white;
+  cursor: pointer;
+}
+#H{
+  display:grid;
+  grid-template-columns:repeat(1,1fr);
+  grid-template-rows:repeat(1,100px);
+  width:100%;
+  background-color: black;
+  margin-top: 4%;
+}
+#I{
+  margin-top: 4%;
+  text-align: center;
+}
+#I>h1{
+color: black;
+}
+
+
+#last{
+     display: flex;
+         margin-left: 2%;
+         margin-top: 4%;
+      }
+        #last>p{
+         margin-left: 1%;
+        }
+        #g{
+           text-align: center;
+        }
+        
+       
+    
+    </style>
+</head>
+<body>
+    <!-- Tab links -->
+<div class="tab">
+    <h1>BATH AND BODY WORKS</h1>
+    <button class="tablinks" onclick="openCity(event, 'London')">ABOUT US</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">JOB AREAS</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">STUDENTS</button>
+    <button class="tablinks" onclick="openCity(event, 'makeup')">FAQs</button>
+    <button class="tablinks" onclick="openCity(event, 'skin')">JOB SEARCH</button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="London" class="tabcontent">
+        <p>BENEFITS</p>
+    </div>
+  <div id="Paris" class="tabcontent">
+       <p>CORPORATES</p>
+      <p>STORES</p>
+  </div>
+  <div>
+    <img src = "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw703cd090/images/Spring2022/fbc_mday_sp3_hm.jpg?yocs=s_">
+</div>
+<div id = A>
+  <div id = B>
+    <h1>JOB SEARCH</h1>
+    <input type = "text" placeholder=" search by keywords">
+    <input type = "text" placeholder=" search by job area">
+    <input type = "text" placeholder=" search near a location">
+    <input type = "text" placeholder=" search">
+    <p><a href = "">Current Employee</a></p>
+  
+  </div>
+
+</div>
+<div id = C>
+  <div id = D>
+     <h1>CURRENT EMPLOYEES</h1>
+     <input type = "text" placeholder="sign in">
+     <h1>RETURNING USERS</h1>
+     <h2>Sign in to access your profile</h2>
+     <input type = "text" placeholder="sign in">
+
+  </div>
+  <div id = E>
+    <h1>JOBS NEAR YOU</h1>
+    <p>JOBS NEAR YOU</p>
+
+  </div>
+  <div id = F>
+   <h1>JOIN OUR TALENT COMMUNITY</h1>
+   <h3>Our talent community is a great way to stay connected and learn more about career opportunities that interest you!</h3>
+   <input type = "text" placeholder="JOINT TALENT COMMUNITY">
+
+  </div>
+</div>
+<div id = G>
+  <h1>BATH & BODY WORKS MAKES THE WORLD A BRIGHTER, HAPPIER PLACE THROUGH THE POWER OF FRAGRANCE.</h1>
+  <p>his idea is what Bath & Body Works was founded on, and it’s at the heart of everything we do.
+
+    We’re a team that cares about our customers and believes in giving them a reason to celebrate with fragrance every day.
+    
+    We are committed to creating a diverse, equitable and inclusive culture that is focused on delivering exceptional fragrances and experiences.
+    
+    We work hard to improve our communities and our planet in a way that will make us proud for years to come … because we believe the world is a brighter place when everyone has access to the things that make them happy.</p>
+    <input type = "text" placeholder="Learn More">
+
+</div>
+<div id = H>
+  <div></div>
+</div>
+
+<div id = I>
+  <h1>JOB LOCATION</h1>
+  <img src = "https://www.google.com/maps/vt/data=_cuDoIuXIA40wc3aba-3c9wm8-ML6hs97WNYYt_Z9qK8CinFJ8X3IG12TEeumnpFjiFbsfrknP6jfkvvoPaDhJUOpPxSoTy__0SU7iLhUg0SRWcQEyuGHaOA5HeLCThya8DZjncgokEE2jW3yvwfD0BSDT0uJnihiobWZk4lL111pw0p2EkBM3O0sojOzuKhUyHT_71WTDZTxJIPsA4t1s115HqUzBsrF7YRRv1DQp8A1tx71SUPhcGqIljzRQ">
+
+
+</div>
+
+
+
+<div id="finalrow">
+    <div id="last">
+        <p><a href="">Terms Of Use </a></p>
+        <p>|</p>
+        <p> <a href="">Privacy Policy</a> </p>
+        <p>|</p>
+        <p> <a href="">Security Bug Report</a> </p>
+        <p>|</p>
+        <p> <a href="">California Privacy Rights</a> </p>
+        <p>|</p>
+        <p><a href="">Do Not Sell My Personal Information (California)</a> </p>
+        <p>|</p>
+        <p><a href="">Transparency in Supply Chains </a> </p>
+        <p>|</p>
+        <p> <a href="">Ad Preferences </a></p>
+    </div>
+    <p id="g">©2022 Bath & Body Works Direct, Inc. All Rights Reserved.</p>
+</div>
+
+
+</body>
+</html>
+
+<script>
+    function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
