@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu_tab</title>
+
+    <style>
+
+*{
+    text-transform: capitalize;
+}
+        /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+#logo{
+    display: flex;
+     width: 1%;
+     height: 40px;
+
+       }
+    #last{
+     display: flex;
+         margin-left: 2%;
+        }
+        #last>p{
+         margin-left: 1%;
+        }
+        #g{
+           text-align: center;
+        }
+        #R>h1{
+         text-align: center;
+        margin-top: 5%;
+        }
+      #R>h2{
+        text-align: center;
+        font-size: 140%;
+        margin-bottom: 5%;
+      }
+      #R>p{
+        text-align: center;
+        font-size: 130%;
+      }
+      #finalrow{
+        margin-top: 5%;
+      }
+      
+
+    </style>
+</head>
+<body>
+    <!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')">OUR COMPANY</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">COMMUNITY</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">CORPORATE RESPONSIBLITY</button>
+    <button class="tablinks" onclick="openCity(event, 'makeup')">INVESTORS</button>
+    <button class="tablinks" onclick="openCity(event, 'skin')">MEDIA</button>
+    <button class="tablinks" onclick="openCity(event, 'personal')">CARRER</button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="London" class="tabcontent">
+        <p>overview</p>
+        <p>about us</p>
+        <p>FAQs</p>
+    </div>
+  <div id="Paris" class="tabcontent">
+       <p>overview</p>
+      <p>bath&bodyfoundation</p>
+  </div>
+  
+  <div id="Tokyo" class="tabcontent">
+      <p>overview</p>
+      <p>supply chain</p>
+  </div>
+
+  <div id="makeup" class="tabcontent">
+    <p>overview</p>
+    <p>stock Information</p>
+</div>
+<div id="skin" class="tabcontent">
+  <p>overview</p>
+  <p>resource</p>
+</div>
+<div id="personal" class="tabcontent">
+  <p>about us</p>
+  <p>students</p>
+</div>
+<div id = R>
+    <img src = "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw703cd090/images/Spring2022/fbc_mday_sp3_hm.jpg?yocs=s_">
+    <h1>We make the world a brighter, happier place through the power of fragrance.</h1>
+    <h2>This idea is what we were founded on, and it’s at the heart of everything we do. We’re a team that cares about our customers and believes in giving them a reason to celebrate with fragrance every day.</h2>
+    <p>We are committed to creating a diverse, equitable and inclusive culture that is focused on delivering exceptional fragrances and experiences.
+        We work hard to improve our communities and our planet in a way that will make us proud for years to come ... because we believe the world is a better place when everyone has access to the things that make them happy.
+        Bath & Body Works is an international company that sells personal care and beauty products in more than 1,700 North American stores and has nearly 300 stores in countries around the globe operating under franchise, license and wholesale arrangements. The company's products are also available online</p>
+        <hr style = "height:2px;border-width:0;color:gray;background-color:gray">
+
+    <div id = N>
+     <h5>Request Investor Relations Email Alerts</h5>
+     <input type = "text" placeholder="email address" /><button>subscribe</button>
+     <h3>GET CONNECTED</h3>
+     </div>
+     </div>
+
+
+     <div id="logo">
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJuZVb1Nj8vLT7q4JpDr4GfBOHwHa7PTwwkA&usqp=CAU">
+         <img src="https://www.pngfind.com/pngs/m/349-3493616_instagram-circle-logo-transparent-hd-png-download.png">
+         <img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png">
+         <img src="http://assets.stickpng.com/images/58e9197deb97430e819064f8.png">
+         <img src="http://assets.stickpng.com/images/58e91958eb97430e819064f3.png"> 
+
+     </div>
+     <div id="finalrow">
+        <div id="last">
+            <p><a href="">Terms Of Use </a></p>
+            <p>|</p>
+            <p> <a href="">Privacy Policy</a> </p>
+            <p>|</p>
+            <p> <a href="">Security Bug Report</a> </p>
+            <p>|</p>
+            <p> <a href="">California Privacy Rights</a> </p>
+            <p>|</p>
+            <p><a href="">Do Not Sell My Personal Information (California)</a> </p>
+            <p>|</p>
+            <p><a href="">Transparency in Supply Chains </a> </p>
+            <p>|</p>
+            <p> <a href="">Ad Preferences </a></p>
+        </div>
+        <p id="g">©2022 Bath & Body Works Direct, Inc. All Rights Reserved.</p>
+    </div>
+
+
+
+</body>
+</html>
+
+<script>
+    function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
