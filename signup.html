@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../navbar/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Sign Up</title>
 </head>
@@ -347,11 +347,12 @@
         </div>
 
     </div>
+    
 </body>
 
 </html>
 <script>
-    var sign = document.querySelector("form").addEventListener("submit", myFunction)
+    var sign = document.querySelector("#form").addEventListener("submit", myFunction)
     var signup = JSON.parse(localStorage.getItem("Information"))
 
     function myFunction() {
@@ -361,7 +362,6 @@
             firstname: form.firstName.value,
             lastname: form.lastName.value,
             mail: form.email.value,
-            confirmEmail: form.confirmEmail.value,
             postalCode: form.postalCode.value,
             phone: form.phone.value,
             password: form.password.value,
@@ -375,6 +375,6 @@
         alert("Account Created Successfully")
 
         //wirte the home page location after loh=gin it will go
-        window.location.href = "index.html"
+        window.location.href = "SignIn.html"
     }
 </script>
