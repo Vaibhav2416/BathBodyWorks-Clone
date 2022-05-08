@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart item</title>
+    <style>
+        .maingrid{
+            padding: 10px;
+        }
+        .left
+        {
+            width: 25%;
+            float :left;
+            padding-top: 100px;
+
+        }
+        .right{
+            width: 75%;
+            float: right;
+            margin-top: -400px;
+        }
+    .header
+        {
+            text-align: left;
+        }
+    .main{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        /* width: 400px; */
+        height: fit-content;
+        justify-items: center;
+        margin:auto;
+      }
+
+      .main > div {
+        /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+        text-align: center;
+      }
+      .main>div>img{
+        width: 50%;
+        height: 50%;
+      }
+      #filter{
+        height: 50%;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left :50px; 
+        box-sizing: border-box;
+      }
+      .linkingsite:hover{
+          color: aqua;
+          cursor: pointer;
+      }
+      #selectId{
+          width: 200px;
+          border-style: double;
+          border-radius: none;
+      }
+      .btn{
+          width: 150px;
+          height: 40px;
+          background-color: black;
+          color: White;
+          border: none;
+          /* padding: 15px 32px; */
+          text-align: center;
+          cursor: pointer;
+      }
+      .promo-banner-click-layer{
+    height: 55px;
+   background-image:url("https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/en_US/v1651571161245/css/images/gingham-pattern.svg?yocs=o_s_");
+   /* background-position: calc(50% - 7px) calc(50% - 21px); */
+   /* background-size: 28px 28px; */
+   margin-top: 0; 
+   top: 0;
+   border-bottom: 1px solid #e5e5e5;
+   
+   }
+
+   #innerpart{
+       background-color: white;
+       height:100%;
+       width: 70%;
+       margin: auto;
+       display: flex;
+       align-items: center;
+       gap: 20px;
+        justify-content: space-around;
+        border-top: 2px solid  #005699;
+        border-bottom: 2px solid  #005699;
+       /* justify-content: space-ar; */
+      
+   }
+   #innerpart > p {
+   color: #005699;
+   font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+   /* font-size: 25px; */
+   font-weight: bold;
+   margin-top: 10px; 
+  
+   }
+   #innerpart > p:nth-child(2)
+   {
+       font-family: 'Roboto Slab', serif;
+       font-weight: bold;
+       font-size: 30px;
+       margin-left: -2.5%;
+       padding-top: 6px;
+   }
+   
+   .details{
+       display: flex;
+       margin-right: 2%;
+       justify-content: flex-end;
+       align-items: flex-end;
+       font-size: 18px;
+       color: #005699;
+       text-decoration: underline;  
+   }
+   #innerpart:hover{
+       background-color: seashell;
+       cursor: pointer;
+       
+   }
+a {
+   text-decoration: none;
+   color: #005699;
+}
+.belowHead{
+   width: 100%;
+   background-color: #f2f2f2;
+   height: 60px;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   gap: 20px;
+}
+.belowHead>p{
+   margin-right: 60px;
+   font-size: 20px;
+   text-decoration: underline;
+   font-weight: lighter;
+}
+.belowHead>h3{
+   color: #005699;
+   font-size: 23px;
+   font-family: "TrendSansW05-One",Arial,sans-serif;
+   font-weight: lighter;
+
+}
+.belowHead>img{
+   height: 60%;
+}
+#bodyworks{
+    width: 100%;
+    /* border: 2px solid black; */
+    /* margin: auto; */
+    margin-top: 5%;
+    display: flex;
+    padding-left: 300px;
+    align-items: center;
+    box-sizing: border-box;
+   
+}
+
+#bodyworks>img{
+    height: 60px;
+    width: 30%;
+    margin-left: 18%;  
+}
+#searchbar{
+    width: 16%;
+    height: 30px;
+    /* border:2px solid black; */
+    display: flex;
+    margin-left: 20%;
+    /* flex-direction: row; */
+    /* margin-right: 200px; */
+
+    /* align-items: center; */
+
+}
+/* #searchbar>div>img {
+    margin-left: 5%;
+    
+} */
+#rude{
+    height: 100%;
+    border-color: #005699;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+        
+}
+#img{
+    height: 25px;
+    padding-top: 5px;
+    margin-left: 4px;   
+}
+/* Dropdown Button */
+.dropbtn {
+    /* background-color: #04AA6D; */
+    /* color: white; */
+    padding : 16px;
+    font-size: 18px;
+    border: none;
+    padding-top: 5px;
+    margin-left: 40%;
+    background-image: url(https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwc807e833/images/svg-icons/UI-MyAccount.svg?yocs=o_s_);
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 10px;
+    border-radius: 10px;
+    
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin-right: 10%;
+  }
+
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd; }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+
+  #card {
+      width: 20%;
+      /* border: 2px solid black; */
+      padding-left: 40px;
+      padding-top: 6px;
+} 
+/* style for website tag  */
+.menu_bar {
+    background: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.menu_bar ul {
+    display: inline-flex;
+    color: white;
+    list-style: none;
+}
+
+.menu_bar ul li {
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu_bar ul li a {
+    text-decoration: none;
+    color: rgb(1, 1, 1);
+}
+
+.menu_bar ul li a:hover {
+    text-decoration: underline;
+    /* margin-bottom: 2px sold blue; */
+    color: blue;
+}
+
+.sub-nemu-1 {
+    display: none;
+    height: auto;
+    width: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.menu_bar ul li:hover .sub-nemu-1 {
+    display: block;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu_bar ul li:hover .sub-nemu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu_bar ul li:hover .sub-nemu-1 ul li {
+    /* width: 100px; */
+    padding: 10px;
+    text-align: left;
+}
+
+.menu_bar ul li:hover .sub-nemu-1 ul li a:hover {
+    color: blue;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+.sub-nemu-2 {
+    display: none;
+    margin-top: 10px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.hover-me:hover .sub-nemu-2 {
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 150px;
+    background-color: rgb(255, 255, 255);
+}
+
+#row{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:30px;
+    margin-top: 100px;
+}
+#row>div>img{
+    height: 150px;
+    width:auto;
+}
+h3,p{
+    margin-bottom:-5px;
+}
+#amount{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+  
+}
+#amount>button{
+    height: 50px;
+    width: 200px;
+}
+#bag{
+    margin-top: -20px;
+    margin-left: 5px;
+   
+}
+#cuppon>button{
+    height: 30px;
+}
+#cuppon{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <div id="navbar">
+            <div class="promo-banner-click-layer">
+                <div id="innerpart">
+                    <p><a href="" target="blank" > Limited time only, online only!</a> </p>
+                    <p><a href=""> $40 Spring Gift Bundle with $40 order</a></p>
+                    <a href="" class="details">Details</a>
+                </div>
+                <a href="" class="promo-banner-click-layer"></a>
+                <div class="belowHead">
+                    <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/en_US/v1651571161245/images/svg-icons/bopis-icon-small.svg?yocs=o_s_" alt="">
+                    <h3>Pick Up In Store</h3>
+                    <p><a href="">Set Store</a></p>   
+                </div>
+            </div>
+           
+           <div id="bodyworks">
+               <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwf1f0e62b/images/svg-icons/Logos-main.svg?yocs=o_s_" alt="">
+               <div id="searchbar">
+                   <!-- <label class="visually-hidden" for="q">Search Catalog</label> -->
+                   <input id="rude" type="search" placeholder="Search by fragrance or product...">
+                   
+                   <a id="img" href=""><img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw729fd72d/images/svg-icons/UI-Search-v2.svg?yocs=o_s_" alt=""></a>
+                   <div class="dropdown">
+                       <a href="" class="dropbtn"></a>
+                       <div class="dropdown-content">
+                         <a href="#">Sign IN or Sign Up </a>
+                         <a href="#">Order Tracking</a>
+                         <a href="#">My Auto Refresh</a>
+                         <a href="#">My Love-It List</a>
+                       </div>
+                     </div>
+
+
+                     <a id="card" href=""><img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/en_US/v1651610522711/images/svg-icons/UI-AddToBag-v2.svg?yocs=o_s_" alt="">
+                    <div id="bag"></div>
+                    </a>
+               
+               
+                </div>
+           </div>
+        </div>
+        <div class="menu_bar">
+            <ul>
+                <li class="active"><a href="new&now.html">NEW & NOW</a>
+                    <div class="sub-nemu-1">
+                        <ul>
+                            <li class="hover-me">
+                                <a href="#">NEW & NOW</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">New Arrivals</a></li>
+                                        <li><a href="#">Men's Shop</a></li>
+                                        <li><a href="#">Laundry Fragrances</a></li>
+                                        <li><a href="#">Best Sellers</a></li>
+                                        <li><a href="#">Aromatherapy Shop</a></li>
+                                        <li><a href="#">Get Inspired</a></li>
+                                        <li><a href="#">Shop By Fragrance</a></li>
+    
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">EXPLORE NEW & NOW</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="mens.html">Men's</a>
+                    <div class="sub-nemu-1">
+                        <ul>
+                            <li class="hover-me">
+                                <a href="#">THE MEN'S SHOP</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">EXPLORE MEN'S</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="body_care.html">BODY CARE</a>
+                    <div class="sub-nemu-1">
+                        <ul>
+                            <li class="hover-me">
+                                <a href="#">FEATURED</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <LI class="hover-me">
+                                <a href="#">BATH & SHOWER</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </LI>
+                            <LI class="hover-me">
+                                <a href="#">MOISTURIZERS</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </LI>
+                            <LI class="hover-me">
+                                <a href="#">FRAGRANCE</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </LI>
+                            <LI class="hover-me">
+                                <a href="#">AROMATHERAPY</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </LI>
+                            <LI class="hover-me">
+                                <a href="#">DIFT SETS</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </LI>
+                            <li><a href="#">EXPLORE BODY CARE</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="HAND_SOAPS_&_SANITIZERS.html">HAND SOAPS & SANITIZERS</a>
+                    <div class="sub-nemu-1">
+                        <ul>
+                            <li class="hover-me">
+                                <a href="#">FEATURED</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <LI class="hover-me">
+                                <a href="#">HAND SOAPS</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </LI>
+                            <LI class="hover-me">
+                                <a href="#">HAND SANITIZERS</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </LI>
+                            <LI class="hover-me">
+                                <a href="#">GIFT SETS</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </LI>
+                            <li><a href="#">EXPLORE HAND SOAPS & SANITIZERS</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="HOME_FRAGRANCE.html">HOME FRAGRANCE</a>
+                    <div class="sub-nemu-1">
+                        <ul>
+                            <li class="hover-me">
+                                <a href="#">FEATURED</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <LI class="hover-me">
+                                <a href="#">CANDLES</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </LI>
+                            <LI class="hover-me">
+                                <a href="#">AIR FRESHENERS</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </LI>
+                            <li><a href="#">EXPLORE HOME FRAGRANCE</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="gifts.html">GIFTS</a>
+                    <div class="sub-nemu-1">
+                        <ul>
+                            <li class="hover-me">
+                                <a href="#">FEATURED</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <LI class="hover-me">
+                                <a href="#">GIFTS BY PRICE</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </LI>
+                            <LI class="hover-me">
+                                <a href="#">GIFTS BY RECIPIENT</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </LI>
+                            <LI class="hover-me">
+                                <a href="#">COLLECTIONS</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </LI>
+                            <LI class="hover-me">
+                                <a href="#">GIFT CARDS</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-nemu-2">
+                                    <ul>
+                                        <li><a href="#">All Men's Body Care</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Body Spray & Cologne</a></li>
+                                        <li><a href="#">Home Fragrance</a></li>
+                                        <li><a href="#">Hand Soaps & Sanitizers</a></li>
+                                    </ul>
+                                </div>
+                            </LI>
+                            <li><a href="#">EXPLORE GIFTS</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+       
+            
+</div>
+ 
+<div id="row"></div>
+
+
+<div id="amount"></div>
+
+<div id="cuppon"></div>
+
+
+</body>
+
+<script>
+
+    
+  
+
+    cartarray=JSON.parse(localStorage.getItem("productBag"))
+    cartarray.forEach(function(el,index){
+        box=document.createElement("div")
+
+        image=document.createElement("img")
+        image.setAttribute("src",el.img)
+        
+        h3=document.createElement("h3")
+        h3.innerText=el.name
+
+        p=document.createElement("p")
+        p.innerText=el.type
+
+        h4=document.createElement("h4")
+        h4.innerText="$"+el.price
+        button=document.createElement("button")
+        button.innerText="remove from cart"
+        button.style.color="red"
+        button.style.backgroundColor = "black";
+
+        button.addEventListener("click",function(){
+            delate(el,index)
+        })
+
+        box.append(image,h3,p,h4,button)
+
+        document.querySelector("#row").append(box)
+    })
+    function delate(el,index){
+        cartarray.splice(index,1)
+        localStorage.setItem("productBag",JSON.stringify(cartarray))
+        location.reload();
+
+    }
+// sum of aomount----------------------------------------------------------------
+   var sum=0;
+   cartarray.forEach(function(el){
+       sum+=el.price
+   })
+   console.log(sum)
+   localStorage.setItem("amount",sum)
+   sum1=localStorage.getItem("amount")
+
+   button12=document.createElement("button")
+   button12.style.color="red"
+   button12.style.backgroundColor = "black";
+   button12.innerText="Amount"+"::"+"$"+sum1;
+   document.querySelector("#amount").append(button12)
+   
+
+   button13=document.createElement("button")
+   button13.innerText="Make payment";
+   button13.style.color="black"
+   button13.style.backgroundColor = "teal";
+
+ button14=document.createElement("button")
+ button14.innerText="Use code:mahesh123 and get 30% off"
+ button14.style.color="red"
+ button14.style.backgroundColor = "black";
+ document.querySelector("#cuppon").append(button14)
+ button14.addEventListener("click",function(){
+     discount(sum)
+ })
+
+   button13.addEventListener("click",function(){
+       
+    // add payment page here using location.href="page name"
+    location.href="payment.html"
+
+   })
+   document.querySelector("#amount").append(button13)
+
+   
+   document.querySelector("#bag").innerText=cartarray.length;
+
+   l=cartarray.length;
+   localStorage.setItem("number",l)
+
+ function discount(sum){
+     amnt=sum*30
+     final=amnt/100
+     sum=sum-final
+     console.log(sum)
+     localStorage.setItem("amount",sum)
+     button12.innerText="Amount"+"::"+"$"+sum;
+ }
+ 
+
+</script>
+
