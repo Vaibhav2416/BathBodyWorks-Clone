@@ -2,11 +2,8 @@
     height: 55px;
    background-image:url("https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/en_US/v1651571161245/css/images/gingham-pattern.svg?yocs=o_s_");
    /* background-position: calc(50% - 7px) calc(50% - 21px); */
-   /* background-size: 28px 28px; */
-   margin-top: 0; 
-   top: 0;
-   border-bottom: 1px solid #e5e5e5;
-   
+   background-size: 28px 28px;
+ 
    }
 
    #innerpart{
@@ -92,19 +89,21 @@ a {
 .belowHead>img{
    height: 60%;
 }
-#bodyworks{
+.bodyworks{
+    height: 80px;
     width: 100%;
     /* border: 2px solid black; */
     /* margin: auto; */
-    margin-top: 5%;
+   
     display: flex;
     padding-left: 300px;
     align-items: center;
     box-sizing: border-box;
+    background-color:rgb(246, 251, 251)
    
 }
 
-#bodyworks>img{
+.bodyworks>img{
     height: 60px;
     width: 30%;
     margin-left: 18%;  
@@ -114,7 +113,7 @@ a {
     height: 30px;
     /* border:2px solid black; */
     display: flex;
-    margin-left: 25%;
+    margin-left: 18%;
     /* flex-direction: row; */
     /* margin-right: 200px; */
 
@@ -130,7 +129,6 @@ a {
     border-color: #005699;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 10px;
-        
 }
 #img{
     height: 25px;
@@ -190,48 +188,70 @@ a {
       padding-left: 40px;
       padding-top: 6px;
 } 
-#main{
-    /* margin: auto; */
-    padding-top: 20px;
-    padding-left: 40px;
-}
+
 #container{
     width: 100%;
-    height: 500px;
-    border: 2px solid black;
+    height: 400px;
+    margin-top: 8%;
+    /* border: 2px solid black; */
     text-align: center;
+}
+#container>div>h2{
+    text-decoration: underline;
 }
 #inner{
     height: 300px;
-    width: 100%;
-    border-bottom: -5%;
-    border: 2px solid red;
+    margin: auto;
+    width: 90%;
     padding-top: 20px;
     display: flex;
    justify-content: space-around;
-   padding-top: 0px;
+   line-height: 2;
+   padding-top: 10px;
    gap: 20px;
    align-items: center;
-  
-   
+    
 }
 #inner>div{
     height: 100%;
-    width: 400px;
-    border: 2px solid green;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  
+    width: 25%;
+    padding-top: 10px;
+    transition: transform .3s; /* Animation */
+  margin: auto;
+  margin-top: 50px;
+}
+#inner>div:hover{
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .compress{
     margin: auto;
-    width: auto;
+    width: 80%;
     overflow: hidden;
+    
 
 }
 .compress>button{
-    width: 100px;
-    height: 35px;
+    width: 150px;
+    height: 40px;
+    margin-top: 50px;
+    color: black;
+    background-color: black;
+    border-radius: 10px;
+
+    
 }
+.inherit a{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+    
+}
+.inherit:hover{
+    background-color: grey;
+}
+
+
 #inner>img{
     height: 20px;
     width: 20px;
@@ -240,18 +260,37 @@ a {
 }
 .center{
     text-align: center;
-    
+    line-height: 2;
 }
 .shopbtn{
     margin-left: 48%;
     height: 30px;
     width: 80px;
+    font-size: 20px;
+    background-color:lightgray;
+    border-radius: 10px;
+    margin-top: 20px;
+
 }
+.shopbtn>a{
+    text-decoration: none;
+    color: black;
+}
+.shopbtn>a:hover{
+    color: white;
+}
+
+.shopbtn:hover{
+background-color: black;
+color: white;
+}
+
 #sting {
 height: 400px;
 width: 100%;
 display: flex;
 margin: auto;
+line-height: 2;
 }
 
 #sting > div:nth-child(1)>img {
@@ -265,6 +304,22 @@ margin: auto;
     margin-top: 5%;   
     text-align: center;
     margin-left:15%;
+}
+.previous{
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color:lightgray
+   
+}
+.nodecr {
+    text-decoration: none;
+    color: black;
+  
+}
+.previous button:hover{
+    background-color: black;
 }
 .full
 {
@@ -292,9 +347,9 @@ margin: auto;
     width: 95%;
     margin: auto;
     height: 300px;
-    
     display: flex;
     justify-content: space-between;
+    
 }
 #smallproducts > div > a{
     text-decoration: none;
@@ -303,8 +358,13 @@ margin: auto;
 #smallproducts > div{
     height: 100%;
     width: 15%;
-  
+    transition: transform .3s; /* Animation */
+    margin: 0 auto;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#smallproducts > div:hover{
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 #smallproducts > div > img{
     width: 100%;
@@ -321,19 +381,26 @@ margin: auto;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,600px);
     gap: 20px;
-       margin: auto;
+    margin: auto;
     margin-top: 10px;
     padding-bottom: 80px;
 }
 #usegrid>div{
 margin-top: 60px;
 width: auto;
+position: relative;
+transition: transform .3s;
+
 /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }
 #usegrid>div> a img{
     width: 98%;
     margin: auto;
     height: 450px;
+}
+#usegrid>div:hover{
+    transform: scale(0.9); 
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .para{
     text-align: center;
@@ -352,7 +419,7 @@ width: auto;
     width: 80%;
     margin: auto;
     height: 350px;
-   border: 2px solid green;
+   /* border: 2px solid green; */
 }
 #image>img{
     width: 100%;
@@ -372,6 +439,7 @@ width: auto;
     height: 100%;
     background-color: black;
     color: white;
+    border-radius: 10px;
 }
 #buttons>button:hover{
 background-color: grey;
@@ -379,6 +447,7 @@ background-color: grey;
 }
 .remove {
     text-decoration: none;
+  
     color: white;
 }
 #left{
@@ -388,12 +457,19 @@ background-color: grey;
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    
 }
 #left>button{
     background-color: black;
+    border-radius: 10px;
+    width: 200px;
+
 }
 #left>button:hover{
     background-color: grey;
+}
+.btmsecond{
+    margin-top: 20px;
 }
 #bottomsecond{
     width: 90%;
@@ -402,6 +478,7 @@ background-color: grey;
    display: flex;
   justify-content: space-between;
   gap: 20px;
+  
 }
 #bottomsecond>div{
     width: 20%;
@@ -437,9 +514,11 @@ h4:hover{
     font-family: 'Cinzel', serif;
     letter-spacing: 4px;
     display: flex;
+    line-height: 2;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin-top: 2%;
 }
 .baher > img{
     width: 40px;
@@ -448,19 +527,24 @@ h4:hover{
 .takecen{
     text-align: center;
     font-size: 20px;
-    margin-top: -10px;
     color: grey;
+    margin-bottom: 20px;
 }
 #dev{
     width: 80%;
-    height: 300px;
-    border: 2px solid green;
+    height: 250px;
     display: flex;
     margin: auto;
     justify-content: space-around;
 }
 #dev >div {
     width: 20%;
+    transition: transform .3s;
+
+}
+#dev > div:hover{
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 #dev >div > a img{
     width: 100%;
@@ -474,6 +558,7 @@ h4:hover{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: grey;
     text-align: center;
+    line-height: 1.5;
 }
 
 

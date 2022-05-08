@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css">
+    
+</head>
+<body>
+    <h1>Payment Gateway</h1>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/home.html">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Delivery Address</h3>
+            <p> Full Name</p>
+            <input type="text" id="fname" name="firstname" placeholder="Nrupul Dev">
+            <p>Email</p>
+            <input type="text" id="email" name="email" placeholder="nrupul@mail.com">
+            <p>Address</p>
+            <input type="text" id="adr" name="address" placeholder="Street">
+            <p>City</p>
+            <input type="text" id="city" name="city" placeholder="Bengalore">
+
+            <div class="row">
+              <div class="col-50">
+                <p>State</p>
+                <input type="text" id="state" name="state" placeholder="state">
+              </div>
+              <div class="col-50">
+                <p>Zip</p>
+                <input type="text" id="zip" name="zip" placeholder="444000">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            
+           
+            <p for="cname">Name on Card</p>
+            <input type="text" id="cname" name="cardname" placeholder="User Account Name">
+            <p>Debit card number</p>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000">
+            <p>Exp Month</p>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <p>Exp Year</p>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <p for="cvv">CVV</p>
+                <input type="text" name="cvv" placeholder="302">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
+<script>
+    document.querySelector("body").addEventListener("submit",myFunction)
+    function myFunction(){
+        alert("Congratulations! Order Has Been Placed Succefully")
+        window.location.href="home.html";
+        }
+</script>
