@@ -10,6 +10,7 @@
        background-color: white;
        height:100%;
        width: 70%;
+       color:#005699; 
        margin: auto;
        display: flex;
        align-items: center;
@@ -25,7 +26,6 @@
    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
    font-size: 25px;
    font-weight: bold;
-   margin-top: 10px; 
   
    }
    #innerpart > p:nth-child(2)
@@ -34,7 +34,7 @@
        font-weight: bold;
        font-size: 30px;
        margin-left: -2.5%;
-       padding-top: 6px;
+       padding-top: 0px;
    }
    
    .details{
@@ -50,6 +50,9 @@
        background-color: seashell;
        cursor: pointer;
        
+   }
+   .nextblue{
+     color: #005699;
    }
 
    /* .promo-banner-click-layer {
@@ -109,7 +112,7 @@ a {
     margin-left: 18%;  
 }
 #searchbar{
-    width: 16%;
+    width: 26%;
     height: 30px;
     /* border:2px solid black; */
     display: flex;
@@ -117,7 +120,7 @@ a {
     /* flex-direction: row; */
     /* margin-right: 200px; */
 
-    /* align-items: center; */
+     align-items: center; 
 
 }
 /* #searchbar>div>img {
@@ -191,25 +194,20 @@ a {
 
 #container{
     width: 100%;
-    height: 400px;
-    margin-top: 8%;
-    /* border: 2px solid black; */
+    height: 40px;
     text-align: center;
 }
 #container>div>h2{
     text-decoration: underline;
 }
-#inner{
-    height: 300px;
-    margin: auto;
-    width: 90%;
-    padding-top: 20px;
-    display: flex;
-   justify-content: space-around;
+#inner {
+  
+   height: 400px;
+   text-align: center;
    line-height: 2;
-   padding-top: 10px;
-   gap: 20px;
-   align-items: center;
+   display: flex;
+   width: 90%;
+   margin: auto;
     
 }
 #inner>div{
@@ -233,18 +231,21 @@ a {
 }
 .compress>button{
     width: 150px;
-    height: 40px;
+    height: 50px;
     margin-top: 50px;
     color: black;
     background-color: black;
     border-radius: 10px;
+    padding-bottom: 10px;
 
     
 }
+
 .inherit a{
     text-decoration: none;
     color:white;
     font-size: 25px;
+   
     
 }
 .inherit:hover{
@@ -264,17 +265,21 @@ a {
 }
 .shopbtn{
     margin-left: 48%;
-    height: 30px;
-    width: 80px;
+    height: 40px;
+ 
+    width: 90px;
+   display: flex;
+   justify-content: center;
     font-size: 20px;
     background-color:lightgray;
     border-radius: 10px;
-    margin-top: 20px;
+    
 
 }
 .shopbtn>a{
     text-decoration: none;
     color: black;
+  
 }
 .shopbtn>a:hover{
     color: white;

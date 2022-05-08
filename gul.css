@@ -1,0 +1,71 @@
+#A{
+    margin-top: 60px;
+    padding-top: 20px;
+    line-height: 2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 400px);
+    gap: 30px;
+    background-color: lightcyan
+    
+ }
+ #B>img{
+     width: 13%;
+ }
+ #blue>img{
+   height: 120px;
+   width: 30%;
+   top: 30%;
+  
+ }
+ #B{
+     margin-top: 5%;
+     margin-bottom: 5%;
+     margin-left: 5%;
+     margin: right 5%;
+ }
+ #last{
+  display: flex;
+  margin-left: 2%;
+ }
+ #last>p{
+  margin-left: 1%;
+ }
+ #red{
+     position: relative;
+     left: 300%;
+ }
+ #blue>img{
+     width: 250%;
+     padding-left: 300px;
+     margin-left: 180%;
+    margin-top: -60px;
+ }
+ #finalrow{
+     background-color: rgb(226, 219, 219);
+ }
+#g{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.inputBox{
+ margin-top:5%;
+}
+#B>p{
+    font-size: 18px;
+}
+#logo{
+    display: flex;
+    width:1%;
+    height: 10%;
+    justify-content: space-between;
+  }
+#form+p{
+margin-left: 3%;
+}
+#logo{
+   cursor: pointer;
+}
