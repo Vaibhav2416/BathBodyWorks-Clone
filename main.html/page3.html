@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu_tab</title>
+
+    <style>
+
+*{
+    text-transform: capitalize;
+}
+        /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.tab>h1{
+    text-align: center;
+}
+#B{
+    text-align: center;
+}
+#B>input{
+    font-size: 200%;
+}
+#B>button{
+    font-size: 200%;
+}
+#C{
+   margin-left: 20%;
+   margin-top: 5%;
+}
+#E>img{
+  width: 15%;
+
+}
+#D{
+  display: flex;
+  text-align: center;
+  margin-left: 10%;
+  margin-top:5%;
+}
+#G>img{
+  width:15%
+}
+#F{
+  display: flex;
+  text-align: center;
+  margin-left: 10%;
+  margin-top:5%;
+}
+#last{
+         display: flex;
+         margin-left: 2%;
+        }
+        #last>p{
+         margin-left: 1%;
+        }
+
+        #finalrow{
+            background-color: rgb(226, 219, 219);
+        }
+       #g{
+           text-align: center;
+       }
+       .r{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin-left: 10%;
+       }
+
+
+    </style>
+</head>
+<body>
+    <!-- Tab links -->
+<div class="tab">
+    <H1>BATH & BODY WORKS</H1>
+    <button class="tablinks" onclick="openCity(event, 'London')">BODY CARE</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">HAND SOAPS</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">HOME FRAGRANCE</button>
+    <button class="tablinks" onclick="openCity(event, 'makeup')">GIFTS</button>
+    <button class="tablinks" onclick="openCity(event, 'skin')">TOP OFFERS</button>
+  </div>
+  <div id = A>
+      <div id = B>
+        <h1>How Can We Help You?</h1>
+        <input type = "text" placeholder="search"><button>Search</button>
+      </div>
+      <div id = C>
+          <img src = "https://customercare.bathandbodyworks.com/euf/assets/themes/bbw/images/faq.png">
+          <h2>FREQUENTLY ASKED QUESTIONS</h2>
+          <p>What is your return policy?</p>
+          <p>Shipping Options: United States</p>
+          <p>What if my package is late or lost?</p>
+          <p>What if my item arrives damaged?</p>
+          <p>How do I get added to your mailing list?</p>
+          <p><a href ="">More frequently asked questions</a></p>
+      </div>
+      <div id = D>
+        <div id = E>
+        <img src = "https://customercare.bathandbodyworks.com/euf/assets/images/1228.svg">
+        <h2>SHOPPING TOOLS</h2>
+        <p>Order basics</p>
+        <p>Offers</p>
+        <p>Accounts & services</p>
+        <p>My Bath & Body Works</p>
+        </div>
+
+         <div id = E>
+         <img src = "https://customercare.bathandbodyworks.com/euf/assets/images/1229.svg">
+         <h2>PRODUCTS</h2>
+         <p>General information</p>
+         <p>Product usage</p>
+         <p>Retired Fragrances</p>
+         <p> Gift cards</p>
+         </div>
+         <div id = E>
+         <img src = "https://customercare.bathandbodyworks.com/euf/assets/images/1230.svg">
+         <h2>SHIPPING & DELIVERY</h2>
+         <p>Shipping Options</p>
+         <p>Order Status</p>
+         <p>Order Tracking & Delivery</p>
+         <p>Buy Online, Pick Up In Store</p>
+         </div>
+         <div id = E class = r>
+           <h2>CONTACT US</h2>
+           <p>We want to hear from you!</p>
+           <p><a href="">live chat</a></p>
+           <p>Chat With Us: 8a - 12a EST</p>
+           <p><a href = "">More Contact Options</a></p>
+
+         </div>
+      </div>
+      <div id = F>
+        <div id = G>
+          <img src = "https://customercare.bathandbodyworks.com/euf/assets/images/1231.svg">
+          <h2>EXCHANGES & RETURNS</h2>
+            <p> Return options</p>
+              <p>Gifts</p>
+        </div>
+              <div id = G>
+                <img src = "https://customercare.bathandbodyworks.com/euf/assets/images/1232.svg">
+                <h2>STORES</h2>
+                <p>General information</p>
+                <p>Store offers</p>
+                <p>Return options</p>
+              </div>
+        <div id = G>
+          <img src = "https://customercare.bathandbodyworks.com/euf/assets/images/1233.svg">
+          <h2>COMPANY INFO</h2>
+          <p>Carerrs</p>
+          <p>privacy and security</p>
+          <p>general Information</p>
+        </div>
+        
+  </div>
+  <div id="finalrow">
+    <div id="last">
+        <p><a href="">Terms Of Use </a></p>
+        <p>|</p>
+        <p> <a href="">Privacy Policy</a> </p>
+        <p>|</p>
+        <p> <a href="">Security Bug Report</a> </p>
+        <p>|</p>
+        <p> <a href="">California Privacy Rights</a> </p>
+        <p>|</p>
+        <p><a href="">Do Not Sell My Personal Information (California)</a> </p>
+        <p>|</p>
+        <p><a href="">Transparency in Supply Chains </a> </p>
+        <p>|</p>
+        <p> <a href="">Ad Preferences </a></p>
+    </div>
+    <p id="g">©2022 Bath & Body Works Direct, Inc. All Rights Reserved.</p>
+</div>
+  
+
+</body>
+</html>
+
+<script>
+    function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
